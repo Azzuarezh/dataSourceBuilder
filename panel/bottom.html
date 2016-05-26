@@ -1,131 +1,60 @@
-<div>
-	<nav class="nav">
-          <ul class="metisFolder">
-            <li>
-              <a href="#">
-                <span class="fa fa-folder-o"></span>
-                Root
-              </a>
-              <ul aria-expanded="false" class="collapse">
-                <li>
-                  <a href="#">
-                    <span class="fa fa-file"></span>
-                    File 1
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="fa fa-folder-o"></span>
-                    Folder
-                  </a>
-                  <ul aria-expanded="false" class="collapse">
-                    <li>
-                      <a href="#">
-                        <span class="fa fa-file"></span>
-                        File 1
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="fa fa-folder-o"></span>
-                        Folder
-                      </a>
-                      <ul aria-expanded="false" class="collapse">
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-file"></span>
-                            File 1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-file-excel-o text-danger"></span>
-                            Excel
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-file-pdf-o"></span>
-                            PDF
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="fa fa-file-pdf-o"></span>
-                        PDF
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="fa fa-folder-o"></span>
-                        Folder
-                      </a>
-                      <ul aria-expanded="false" class="collapse">
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-file"></span>
-                            File 1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-folder-o"></span>
-                            Folder
-                          </a>
-                          <ul aria-expanded="false" class="collapse">
-                            <li>
-                              <a href="#">
-                                <span class="fa fa-file"></span>
-                                File 1
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="fa fa-file-excel-o text-danger"></span>
-                                Excel
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="fa fa-file-pdf-o"></span>
-                                PDF
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-file-pdf-o"></span>
-                            PDF
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="fa fa-file-pdf-o"></span>
-                        PDF
-                      </a>
-                    </li>
+<div class="bottomPane">
 
-                    <li>
-                      <a href="#">
-                        <span class="fa fa-file-pdf-o"></span>
-                        PDF2
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="fa fa-file-pdf-o"></span>
-                    PDF
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#sqlTab" aria-controls="sqlTab" role="tab" data-toggle="tab">
+        <i class="fa fa-terminal"></i> SQL View
+      </a>
+      </li>
+    <li role="presentation">
+      <a href="#resultView" aria-controls="resultView" role="tab" data-toggle="tab">
+        <i class="fa fa-table"></i> Result
+      </a>
+      </li>
+    <li role="presentation">
+      <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+      <i class="fa fa-comment"></i> Messages
+    </a>
+    </li>    
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="sqlTab">
+      <code>Query Here</code>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="resultView">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="messages">
+      <samp>Query Executed Successfully ...</samp>
+    </div>    
+  </div>
+
 </div>
