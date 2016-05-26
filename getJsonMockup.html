@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Get Json</title>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>	
+	<script src="bower_components/mockjs/dist/mock.js"></script>	
+</head>
+<body>
+	<script>
+		// Mock.mock(rurl, template)		
+
+		Mock.mock(/basic_branch.json/, 
+				{
+				name:'basic_branch',
+				db:'Cronos',
+				type:'table',
+				column: [
+					{'name':'id',type:'int','isPrimary':true, 'length': 4},
+					{'name':'branchName',type:'varchar', 'length': 50},
+					{'name':'city',type:'varchar', 'length': 4}
+				]
+		});
+
+		Mock.mock(/basic_user.json/, 
+				{
+				name:'basic_user',
+				db:'Cronos',
+				type:'table',
+				column: [
+					{'name':'id',type:'int','isPrimary':true, 'length': 4},
+					{'name':'userName',type:'varchar', 'length': 4},
+					{'name':'password',type:'varchar', 'length': 4}
+				]
+		});
+
+		$.ajax({
+		    url: 'basic_user.json',
+		    dataType: 'json'
+		}).done(function(data, status, jqXHR){
+		    $('<pre>').text(JSON.stringify(data, null, 4))
+		        .appendTo('body')
+		})
+	</script>
+</body>
+</html>
