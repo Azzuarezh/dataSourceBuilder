@@ -1,0 +1,62 @@
+/*
+Custom CSS for Data Source purpose
+    -Custom model table/view style
+    -Custom connectivity style    
+*/
+body{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.isi{
+    overflow: auto
+}
+.modal{
+    z-index: 9999;
+}
+
+#mainContent{
+    position: absolute;
+    width: 99%;    
+    max-height: 70%;            
+}
+
+.plumbTable {
+    height:100px; width: 130px;    
+    border: 1px solid #eeee;
+    cursor: move;
+    float: left;
+    background-color:white;
+    position: relative;
+    border-radius:4px 4px 4px 4px;         
+ }
+    
+.plumbHeader{
+    text-align: center;  
+    background-color: gray;
+    border-radius:2px 2px 2px 2px;
+ }
+.plumbColumns{    
+    float: left;
+    width: 100%;     
+}
+
+.plumbColumn{        
+    padding-left: 20px;
+    position: relative;
+    left: 1px;
+    cursor: crosshair;
+    border-bottom: 1px solid #eee;
+}
+.jsplumb-target-element-dragging{
+    z-index: 1000;
+}
+
+ .jsplumb-overlay { 
+    z-index:6;
+    /*fill:red;    */
+}
+
+.endPointDiv{
+    position:absolute;    
+}
