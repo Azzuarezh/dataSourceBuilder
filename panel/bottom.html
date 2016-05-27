@@ -77,5 +77,27 @@
       <samp>Query Executed Successfully ...</samp>
     </div>    
   </div>
-
 </div>
+<script>
+$(document).ready(function(){
+    $('#qb').queryBuilder({
+       plugins: ['bt-tooltip-errors'],  
+       filters: [
+       {
+        id: 'id',
+        label: 'id',
+        type: 'integer'
+      }, 
+      {
+        id: 'branchName',
+        label: 'Branch Name',
+        operators: ['equal', 'not_equal', 'in', 'not_in', 'is_null', 'is_not_null']
+      },
+      {
+        id: 'city',
+        label: 'City',
+        type: 'string'        
+      }]
+    }) 
+})
+</script>
