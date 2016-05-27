@@ -47,8 +47,8 @@
     <div id="layout" style="width: 100%; position:absolute; top:0;left:0;height:100%"></div>
 
     <!-- Modal -->
-    <div id="modalConnect" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+    <div id="modalConnect" class="modal fade modal-primary" role="dialog">
+      <div class="modal-dialog modal-primary">
 
         <!-- Modal content-->
         <div class="modal-content">
@@ -58,7 +58,7 @@
           </div>
           <div class="modal-body">
              <div class="form-group">
-                <label for="driver">Driver Class:</label>
+                <label for="driver"><i class="fa fa-gears"></i> Driver Class:</label>
                     <select id="driver" name="driver" class="form-control">
                         <option></option>
                         <option value="MySQL">MySQL</option>
@@ -68,15 +68,15 @@
                     </select>
             </div>
              <div class="form-group">
-                <label for="connectinString">Connection String:</label>
+                <label for="connectinString"><i class="fa fa-hashtag"></i> Connection String:</label>
                     <input type="url" class="form-control" name="connectionString" id="connectionString" />
             </div>
             <div class="form-group">
-                <label for="userName">User Name:</label>
+                <label for="userName"><i class="fa fa-user"></i> User Name:</label>
                     <input type="text" class="form-control" name="userName" id="userName" />
             </div>
             <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password"><i class="fa fa-lock"></i> Password:</label>
                     <input type="password" class="form-control" name="password" id="password" />        
           <div class="modal-footer">
             <a class="btn btn-success" role="button"><i class="fa fa-plug" title="connect"></i></a>
