@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">		
 	<nav class="nav">
-          <ul class="metisFolder">
+          <ul class="metisFolder db-treeview">
             <li>
               <a href="#">
                 <span class="fa fa-database"></span>
@@ -13,13 +13,13 @@
                 <span class="fa fa-database"></span>
                 Cronos
               </a>
-              <ul>
+              <ul class="db-object-treeview">
               	<li>
 	              <a href="#">
 	                <span class="fa fa-table"></span>
 	                Tables
 	              </a>   
-	              <ul>
+	              <ul class="tbl-treeview">
 	              	<li>
 			            <a href="#">
 			               <span class="fa fa-table"></span>
@@ -39,7 +39,7 @@
 	                <span class="fa fa-eye"></span>
 	                Views
 	              </a>
-	              <ul>
+	              <ul class="view-treeview">
 	              	<li>
 			            <a href="#">
 			               <span class="fa fa-eye"></span>
@@ -75,3 +75,4 @@
       });
     });
 </script>
+<script src="lib/js/dragAndDropDBStructure.js"></script>
