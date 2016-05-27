@@ -21,9 +21,23 @@
 
   <!-- Tab panes -->
   <div class="tab-content">
+    
     <div role="tabpanel" class="tab-pane fade in active" id="sqlTab">
-      <code>Query Here</code>
+      <code id="selectedFieldCode">Select * from Basic_Branch</code>
+      <code id="whereSyntax" style="display:none">WHERE</code>
+      <code id="conditionField" style="display:none"></code>
+      
+      <div id="filterQueryPanel">
+        <div>
+          <a role="button" class="label btn-xs-4  label-primary"><i class="fa fa-filter"></i></a>
+          <a role="button" class="label btn-xs-4  label-success"><i class="fa fa-check"></i></a>
+        </div>
+        <div id="qb"></div>
+      </div>
+      <div
     </div>
+
+
     <div role="tabpanel" class="tab-pane fade" id="resultView">
         <div class="container">
           <table class="table table-bordered" style="margin-top:10px;">
