@@ -44,52 +44,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.context-menu-icon-add:before {
-  content: "";
-}
-
-.context-menu-icon-copy:before {
-  content: "";
-}
-
-.context-menu-icon-cut:before {
-  content: "";
-}
-
-.context-menu-icon-delete:before {
-  content: "";
-}
-
-.context-menu-icon-edit:before {
-  content: "";
-}
-
-.context-menu-icon-paste:before {
-  content: "";
-}
-
-.context-menu-icon-quit:before {
-  content: "";
-}
 
 .context-menu-icon-fn:before {  
    font-family: FontAwesome;
    content: "\f0c3";
 }
 
+/*Aggregate icon*/
 .context-menu-icon-aggregate:before {  
    font-family: FontAwesome;
    content: "\f24e";
-}
-
-.context-menu-icon-scalar:before {  
-   font-family: FontAwesome;
-   content: "\f295";
-}
-
-.context-menu-icon-len:before {  
-   font-family: FontAwesome;
-   content: "\f07e";
 }
 
 .context-menu-icon-sum:before {     
@@ -98,9 +62,67 @@
 
 .context-menu-icon-count:before {     
    font-family: FontAwesome;
-   content: "\f1e5";
+   content: "\f1ec";
 }
 
+.context-menu-icon-avg:before {     
+   font-family: FontAwesome;
+   content: "\f080";
+}
+.context-menu-icon-max:before {
+   font-family: FontAwesome;
+   content: "\f067";
+}
+
+.context-menu-icon-min:before {
+   font-family: FontAwesome;
+   content: "\f068";
+}
+
+/*Scalar icon*/
+
+.context-menu-icon-scalar:before {  
+   font-family: FontAwesome;
+   content: "\f295";
+}
+
+.context-menu-icon-ucase:before {  
+   font-family: FontAwesome;
+   content: "\f031\f0de";
+}
+.context-menu-icon-lcase:before {  
+   font-family: FontAwesome;
+   content: "\f031\f0dd";
+}
+
+.context-menu-icon-fnMid:before {  
+   font-family: FontAwesome;
+   content: "\f141";   
+}
+
+.context-menu-icon-len:before {  
+   font-family: FontAwesome;
+   content: "\f07e";
+}
+
+.context-menu-icon-fnRound:before {  
+   /*font-family: FontAwesome;*/
+   content: "\3b1";
+}
+
+.context-menu-icon-fnNow:before {  
+   font-family: FontAwesome;
+   content: "\f017";
+}
+
+.context-menu-icon-fnFormat:before {  
+   font-family: FontAwesome;
+   content: "\f292";
+}
+
+.context-menu-icon-TypeCast:before {     
+   content: "\28\2e\2e\2e\29";
+}
 
 
 
