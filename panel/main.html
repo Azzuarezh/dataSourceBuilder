@@ -16,7 +16,7 @@
 				<span class="endPointDiv endPointRight">&#8226;</span>
 			</div>			
 			<div class="plumbColumn" id="col_b">
-				<span class="endPointDiv endPointLeft">&#8226;</span>
+				<span class="endPointDiv endPointLeft" style="font-size:2em;">&#8226;</span>
 				col_b
 				<span class="endPointDiv endPointRight">&#8226;</span>
 			</div>
@@ -50,7 +50,7 @@
 <script>
 jsPlumb.ready(function(){
 	var inst = jsPlumb.getInstance({
-		Endpoint: ["Dot", {radius: 2}],
+				Endpoint: ["Dot", {radius: 2}],
 		        Connector:"Flowchart",
 		        HoverPaintStyle: {strokeStyle: "#1e8151", lineWidth: 2 },
 		        ConnectionOverlays: [
@@ -65,13 +65,33 @@ jsPlumb.ready(function(){
 		 ConnectionsDetachable:true
 	})
 
-	
+	inst.draggable('tbl_table_1');
+	inst.draggable('tbl_table_2');
+
 	inst.makeSource("col_a", {
 					  filter:'.endPointDiv',
 					  anchor:"Continuous",
 					  uniqueEndpoint:true,
 					  Connector : "Flowchart",
-					  connectorStyle: { strokeStyle: "#050", lineWidth: 2},					  
+					  connectorStyle: { strokeStyle: "#050", lineWidth: 2}					  
+	});
+
+	inst.makeSource("col_x", {
+					filter:'.endPointDiv',
+					  anchor:"Continuous",
+					  uniqueEndpoint:true,
+					  Connector : "Flowchart",
+					  connectorStyle: { strokeStyle: "#050", lineWidth: 2}
+		            
+	});
+
+	inst.makeTarget("col_b", {
+					filter:'.endPointDiv',
+					dropOptions: { hoverClass: "dragHover" },
+		            anchor: "Continuous",
+		            uniqueEndpoint:true,
+		            allowLoopback: false
+		            
 	});
 
 	inst.makeTarget("col_x", {
@@ -79,13 +99,18 @@ jsPlumb.ready(function(){
 					dropOptions: { hoverClass: "dragHover" },
 		            anchor: "Continuous",
 		            uniqueEndpoint:true,
-		            allowLoopback: false,
+		            allowLoopback: false
 		            
-				}/*{
-	  anchor:["Continuous", { faces:[ "right", "left" ] } ],
-	  filter:'span',
-	  paintStyle:{ fillStyle:"red" }
-	}*/);
+	});
+
+	inst.makeTarget("col_y", {
+					filter:'.endPointDiv',
+					dropOptions: { hoverClass: "dragHover" },
+		            anchor: "Continuous",
+		            uniqueEndpoint:true,
+		            allowLoopback: false
+		            
+	});
 
 
 
