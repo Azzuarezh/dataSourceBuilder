@@ -2,7 +2,7 @@
 	<div class="plumbTable" id="tbl_table_1">
 		<div class="plumbHeader">
 			<span class="jsplumb-dbObject-icon">
-				<i class="fa fa-'+iconHeader+'"></i>
+				<i class="fa fa-table"></i>
 			</span>
 			Table_1
 			<span class="jsplumb-close-icon">
@@ -11,18 +11,22 @@
 		</div>		
 		<div class="plumbColumns">
 			<div class="plumbColumn" id="col_a">
-				<span class="endPointDiv endPointLeft">+</span>col_a<span class="endPointDiv endPointRight">+</span>
+				<span class="endPointDiv endPointLeft">&#8226;</span>
+				col_a
+				<span class="endPointDiv endPointRight">&#8226;</span>
 			</div>			
 			<div class="plumbColumn" id="col_b">
-				<span class="endPointDiv endPointLeft">+</span>col_b<span class="endPointDiv endPointRight">+</span>
+				<span class="endPointDiv endPointLeft">&#8226;</span>
+				col_b
+				<span class="endPointDiv endPointRight">&#8226;</span>
 			</div>
 		</div>
 	</div>
 
-	<div class="plumbTable" id="tbl_table_2" style="margin-left:50px">
+	<div class="plumbTable" id="tbl_table_2" style="margin-left:50px;margin-top:40px">
 		<div class="plumbHeader">
 			<span class="jsplumb-dbObject-icon">
-				<i class="fa fa-'+iconHeader+'"></i>
+				<i class="fa fa-table"></i>
 			</span>
 			Table_2
 			<span class="jsplumb-close-icon">
@@ -31,10 +35,14 @@
 		</div>		
 		<div class="plumbColumns">
 			<div class="plumbColumn" id="col_x">
-				<span class="endPointDiv endPointLeft">+</span>col_x<span class="endPointDiv endPointRight">+</span>
+				<span class="endPointDiv endPointLeft">&#8226;</span>
+				col_x
+				<span class="endPointDiv endPointRight">&#8226;</span>
 			</div>			
 			<div class="plumbColumn" id="col_y">
-				<span class="endPointDiv endPointLeft">+</span>col_y<span class="endPointDiv endPointRight">+</span>
+				<span class="endPointDiv endPointLeft">&#8226;</span>
+				col_y
+				<span class="endPointDiv endPointRight">&#8226;</span>
 			</div>
 		</div>
 	</div>
@@ -49,11 +57,12 @@ jsPlumb.ready(function(){
 		            [ "Arrow", {
 		                location: 1,
 		                id: "arrow",
-		                length: 14,
-		                foldback: 0.8
+		                length: 5,
+		                foldback: 0.2
 		            } ]
 		        ],
-		 Container:'mainContent'
+		 Container:'mainContent',
+		 ConnectionsDetachable:true
 	})
 
 	
@@ -61,7 +70,7 @@ jsPlumb.ready(function(){
 					  filter:'.endPointDiv',
 					  anchor:"Continuous",
 					  uniqueEndpoint:true,
-					  Connector : [ "State Machine", { proximityLimit : 1 } ],
+					  Connector : "Flowchart",
 					  connectorStyle: { strokeStyle: "#050", lineWidth: 2},					  
 	});
 
