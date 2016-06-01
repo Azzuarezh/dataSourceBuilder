@@ -20,24 +20,27 @@
   </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content">
-    
+  <div class="tab-content">    
     <div role="tabpanel" class="tab-pane fade in active" id="sqlTab">
-      <code id="selectedFieldCode">Select * from Basic_Branch</code>
-      <code id="whereSyntax" style="display:none">WHERE</code>
-      <code id="conditionField" style="display:none"></code>
-      
-      <div id="filterQueryPanel">
-        <div>
-          <a role="button" class="label btn-xs-4  label-primary"><i class="fa fa-filter"></i></a>
-          <a role="button" class="label btn-xs-4  label-success"><i class="fa fa-check"></i></a>
-        </div>
-        <div id="qb"></div>
-      </div>
-      <div
+      <code id="selectedFieldCode">SELECT&nbsp;
+          <span class="label label-default">&lt;distinct&gt;</span>&nbsp;
+          <span class="label label-info">&lt;fieldNames&gt;</span>&nbsp;
+          <span class="label label-default">&lt;alias&gt;</span>&nbsp;
+      </code><br/>
+      <code id="fromSyntax">FROM&nbsp;
+          <span class="label label-success">&lt;tableNames&gt;</span>
+          <span class="label label-default">&lt;aliases&gt;</span>
+      </code><br/>
+      <code id="whereSyntax">WHERE&nbsp;
+          <span class="label label-warning">&lt;conditions&gt;</span>
+      </code><br/>
+      <code id="groupSyntax">GROUP BY&nbsp;
+          <span class="label label-info">&lt;fieldName&gt;</span>&nbsp;
+      </code>
+      <code id="OrderSyntax">ORDER BY&nbsp;
+          <span class="label label-info">&lt;fieldName&gt;</span>&nbsp;
+      </code>        
     </div>
-
-
     <div role="tabpanel" class="tab-pane fade" id="resultView">
         <div class="container">
           <table class="table table-bordered" style="margin-top:10px;">
