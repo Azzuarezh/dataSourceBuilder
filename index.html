@@ -3,6 +3,7 @@
 <head>
     <title>Mockup Data Source</title>    
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/ext/font-mfizz-2.3.0/font-mfizz.css">
     <link rel="stylesheet" type="text/css" href="bower_components/w2ui/w2ui-1.4.3.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/metisMenu/dist/metisMenu.css">
     <link rel="stylesheet" type="text/css" href="bower_components/metisMenu/dist/prism.min.css">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="lib/css/customPlumb.css">
     <link rel="stylesheet" type="text/css" href="lib/css/bottomPanel.css">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/jQuery-QueryBuilder/dist/css/query-builder.default.css"/>    
     <link rel="stylesheet" type="text/css" href="bower_components/jQuery-contextMenu/dist/jquery.contextMenu.css"/>    
     
@@ -23,6 +25,7 @@
     <script type="text/javascript" src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/jQuery-contextMenu/dist/jquery.contextMenu.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="bower_components/mockjs/dist/mock.js"></script>
 
     <!-- JS -->
@@ -56,38 +59,85 @@
 
         <!-- Modal content-->
         <div class="modal-content">
+          
           <div class="modal-header modal-primary">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title"><i class="fa fa-database"></i> Connect to Server</h4>
-          </div>
-          <div class="modal-body">
-             <div class="form-group">
-                <label for="driver"><i class="fa fa-gears"></i> Driver Class:</label>
-                    <select id="driver" name="driver" class="form-control">
-                        <option></option>
-                        <option value="MySQL">MySQL</option>
-                        <option value="SQLServer">SQL Server</option>
-                        <option value="PostgreSQL">PostgreSQL</option>                    
-                        <option value="Oracle">Oracle</option>
-                    </select>
+             </div>
+                <div class="modal-body">
+                     <div class="form-group">
+                        <label for="driver"><i class="fa fa-gears"></i> Driver Class:</label>
+                            <select id="driver" name="driver" class="form-control selectpicker">
+                                <option></option>
+                                <option value="MySQL" data-icon="icon-mysql">MySQL</option>
+                                <option value="SQLServer" data-icon="icon-mssql">SQL Server</option>
+                                <option value="PostgreSQL" data-icon="icon-postgres">PostgreSQL</option>                    
+                                <option value="Oracle" data-icon="icon-oracle-alt">Oracle</option>
+                            </select>
+                    </div>
+                         <div class="form-group">
+                            <label for="connectinString"><i class="fa fa-hashtag"></i> Connection String:</label>
+                                <input type="url" class="form-control" name="connectionString" id="connectionString" />
+                        </div>
+                        <div class="form-group">
+                            <label for="userName"><i class="fa fa-user"></i> User Name:</label>
+                                <input type="text" class="form-control" name="userName" id="userName" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><i class="fa fa-lock"></i> Password:</label>
+                            <input type="password" class="form-control" name="password" id="password" />                          
+                        </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-success" role="button"><i class="fa fa-plug" title="connect"></i></a>
+                    </div>
+                </div>
             </div>
-             <div class="form-group">
-                <label for="connectinString"><i class="fa fa-hashtag"></i> Connection String:</label>
-                    <input type="url" class="form-control" name="connectionString" id="connectionString" />
-            </div>
-            <div class="form-group">
-                <label for="userName"><i class="fa fa-user"></i> User Name:</label>
-                    <input type="text" class="form-control" name="userName" id="userName" />
-            </div>
-            <div class="form-group">
-                <label for="password"><i class="fa fa-lock"></i>Password:</label>
-                    <input type="password" class="form-control" name="password" id="password" />        
-          <div class="modal-footer">
-            <a class="btn btn-success" role="button"><i class="fa fa-plug" title="connect"></i></a>
-          </div>
         </div>
+    </div>
 
-      </div>
+    <!-- Modal -->
+    <div id="modalExport" class="modal fade modal-primary" role="dialog">
+      <div class="modal-dialog modal-primary">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          
+          <div class="modal-header modal-primary">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><i class="fa fa-database"></i> Export Settings</h4>
+             </div>
+                <div class="modal-body">
+                     <div class="form-group">
+                        <label for="dsName"><i class="fa fa-database"></i> Data Source Name:</label>
+                            <input type="text" 
+                            id="dsName" 
+                            name="dsName" 
+                            placeholder="Your data source name ..."
+                            class="form-control" />                                
+                    </div>
+                         <div class="form-group">
+                            <label for="dsDescription">                                
+                                <i class="fa fa-comment-o"></i> Data Source Description:</label>
+                                <textarea class="form-control" 
+                                name="dsDescription" 
+                                id="dsDescription"
+                                placeholder="Describe your data source here ..."
+                                ></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <label for="assign"><i class="fa fa-map-signs"></i> Assign to module:</label>
+                            <select id="assign" name="assign" class="form-control" id="assign">
+                                <option></option>
+                                <option value="Custom Rule">Custom Rule</option>
+                                <option value="Query Tools">Query Tools</option>                                
+                            </select>                          
+                        </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-success" role="button"><i class="fa fa-plug" title="connect"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
