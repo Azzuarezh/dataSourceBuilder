@@ -63,6 +63,14 @@ body{
     /*fill:red;    */
 }
 
+.jsplumb-close-icon{
+    cursor:pointer;
+    position :absolute;
+    right: 3px;
+    color:lightgray;
+}
+
+
 .endPointDiv{
     position:absolute;    
 }
