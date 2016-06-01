@@ -41,28 +41,42 @@
 </div>
 <script>
 jsPlumb.ready(function(){
-	var inst = jsPlumb.getInstance()
+	var inst = jsPlumb.getInstance({
+		Endpoint: ["Dot", {radius: 2}],
+		        Connector:"Flowchart",
+		        HoverPaintStyle: {strokeStyle: "#1e8151", lineWidth: 2 },
+		        ConnectionOverlays: [
+		            [ "Arrow", {
+		                location: 1,
+		                id: "arrow",
+		                length: 14,
+		                foldback: 0.8
+		            } ]
+		        ],
+		 Container:'mainContent'
+	})
 
-	inst.connect({
-	filter:"span.endPointDiv",
-	source:'col_a',
-	target:'col_x',
-	anchors:["Right", "Left" ],
-  	endpoint:"Rectangle",
-  	endpointStyle:{ fillStyle: "yellow" }})
-
-
-	/*inst.makeSource("col_a", {
-	  anchor:["Continuous", { faces:[ "right", "left" ] } ],
-	  filter:'span',
-	  paintStyle:{ fillStyle:"red" }
+	
+	inst.makeSource("col_a", {
+					  filter:'.endPointDiv',
+					  anchor:"Continuous",
+					  uniqueEndpoint:true,
+					  Connector : [ "State Machine", { proximityLimit : 1 } ],
+					  connectorStyle: { strokeStyle: "#050", lineWidth: 2},					  
 	});
 
 	inst.makeTarget("col_x", {
+					filter:'.endPointDiv',
+					dropOptions: { hoverClass: "dragHover" },
+		            anchor: "Continuous",
+		            uniqueEndpoint:true,
+		            allowLoopback: false,
+		            
+				}/*{
 	  anchor:["Continuous", { faces:[ "right", "left" ] } ],
 	  filter:'span',
 	  paintStyle:{ fillStyle:"red" }
-	});*/
+	}*/);
 
 
 

@@ -6,7 +6,7 @@
 	background-color:white;
 	z-index:-888;
 }
-#sqlView{
+.sqlView{
 	background-color: #F5F6F7;
 }
 .nav.nav-tabs{
