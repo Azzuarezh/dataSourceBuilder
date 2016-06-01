@@ -1,3 +1,72 @@
-<div id="mainContent"></div>
+<div id="mainContent">		
+	<div class="plumbTable" id="tbl_table_1">
+		<div class="plumbHeader">
+			<span class="jsplumb-dbObject-icon">
+				<i class="fa fa-'+iconHeader+'"></i>
+			</span>
+			Table_1
+			<span class="jsplumb-close-icon">
+				<i class="fa fa-times"></i>
+			</span>
+		</div>		
+		<div class="plumbColumns">
+			<div class="plumbColumn" id="col_a">
+				<span class="endPointDiv endPointLeft">+</span>col_a<span class="endPointDiv endPointRight">+</span>
+			</div>			
+			<div class="plumbColumn" id="col_b">
+				<span class="endPointDiv endPointLeft">+</span>col_b<span class="endPointDiv endPointRight">+</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="plumbTable" id="tbl_table_2" style="margin-left:50px">
+		<div class="plumbHeader">
+			<span class="jsplumb-dbObject-icon">
+				<i class="fa fa-'+iconHeader+'"></i>
+			</span>
+			Table_2
+			<span class="jsplumb-close-icon">
+				<i class="fa fa-times"></i>
+			</span>
+		</div>		
+		<div class="plumbColumns">
+			<div class="plumbColumn" id="col_x">
+				<span class="endPointDiv endPointLeft">+</span>col_x<span class="endPointDiv endPointRight">+</span>
+			</div>			
+			<div class="plumbColumn" id="col_y">
+				<span class="endPointDiv endPointLeft">+</span>col_y<span class="endPointDiv endPointRight">+</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+jsPlumb.ready(function(){
+	var inst = jsPlumb.getInstance()
+
+	inst.connect({
+	filter:"span.endPointDiv",
+	source:'col_a',
+	target:'col_x',
+	anchors:["Right", "Left" ],
+  	endpoint:"Rectangle",
+  	endpointStyle:{ fillStyle: "yellow" }})
+
+
+	/*inst.makeSource("col_a", {
+	  anchor:["Continuous", { faces:[ "right", "left" ] } ],
+	  filter:'span',
+	  paintStyle:{ fillStyle:"red" }
+	});
+
+	inst.makeTarget("col_x", {
+	  anchor:["Continuous", { faces:[ "right", "left" ] } ],
+	  filter:'span',
+	  paintStyle:{ fillStyle:"red" }
+	});*/
+
+
+
+})
+</script>
 <script src="lib/js/plumbing.js"></script>
 <script src="lib/js/contextMenu.js"></script>
