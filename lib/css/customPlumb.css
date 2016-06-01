@@ -79,3 +79,9 @@ body{
 .endPointDiv{
     position:absolute;    
 }
+.enPointLeft{
+    left:3px;
+}
+.enPointRight{
+    right:3px;
+}
