@@ -1,0 +1,782 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tbl_tb",
+				"tbl_table_1"
+			],
+			[
+				"tbl_table",
+				"tbl_table_1"
+			],
+			[
+				"enpoint",
+				"endPoint"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"conte",
+				"context-menu-icon"
+			],
+			[
+				"colum",
+				"columnSpan"
+			],
+			[
+				"result",
+				"resultColumns"
+			],
+			[
+				"re",
+				"resultId"
+			],
+			[
+				"off",
+				"offsetY"
+			],
+			[
+				"body",
+				"bodyContent"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"dropp",
+				"droppedObject"
+			],
+			[
+				"ul",
+				"ul	Tag"
+			],
+			[
+				"bas",
+				"basic_branch"
+			],
+			[
+				"resi",
+				"ne-resize"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"valid",
+				"valid"
+			],
+			[
+				"quer",
+				"queryBuilder"
+			],
+			[
+				"filter",
+				"filterQuery"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"item_",
+				"item_right"
+			],
+			[
+				"item",
+				"item_left"
+			],
+			[
+				"js",
+				"jsPlumb"
+			],
+			[
+				"plumbColum",
+				"plumbColumnList"
+			],
+			[
+				"border-ra",
+				"border-top-left-radius"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"plumb",
+				"plumbHeader"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"input",
+				"input	Tag"
+			],
+			[
+				"main",
+				"mainPanelObject"
+			],
+			[
+				"button",
+				"button	Tag"
+			],
+			[
+				"div",
+				"div	Tag"
+			],
+			[
+				"h1",
+				"H1"
+			],
+			[
+				"Log",
+				"Login"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"l",
+				"LI	Tag"
+			],
+			[
+				"chara",
+				"charaKeyInAsciiInt"
+			],
+			[
+				"charaE",
+				"charaEncryptInAsciiInt"
+			],
+			[
+				"conso",
+				"console"
+			],
+			[
+				"enkrip",
+				"enkripsiApp"
+			],
+			[
+				"span",
+				"span	Tag"
+			],
+			[
+				"initiali",
+				"initialize_map"
+			],
+			[
+				"test",
+				"testField"
+			],
+			[
+				"angkapem",
+				"angkaPembagi"
+			],
+			[
+				"st",
+				"startNum"
+			],
+			[
+				"angka",
+				"angkaPembagi"
+			],
+			[
+				"angk",
+				"angkaPembagi"
+			],
+			[
+				"posi",
+				"posisi_atas"
+			],
+			[
+				"posisi",
+				"posisi_li"
+			],
+			[
+				"p",
+				"pl	println"
+			],
+			[
+				"vali",
+				"validasi"
+			],
+			[
+				"elent",
+				"element"
+			],
+			[
+				"master",
+				"masterTable"
+			],
+			[
+				"rec",
+				"recMastercol2"
+			],
+			[
+				"dra",
+				"draggable"
+			],
+			[
+				"di",
+				"div"
+			],
+			[
+				"Rule",
+				"Rule_Description"
+			],
+			[
+				"Rule_I",
+				"Rule_ID"
+			],
+			[
+				"a",
+				"arrSelectedNodes"
+			],
+			[
+				"tre",
+				"tree"
+			],
+			[
+				"n",
+				"node2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"set",
+				"Set Syntax: Java"
+			],
+			[
+				"set syntax: javad",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"set syntax: ja",
+				"Set Syntax: Java"
+			],
+			[
+				"java",
+				"Snippet: java.io."
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htmlpre",
+				"HTMLPrettify"
+			],
+			[
+				"htmlprett",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"ht",
+				"HTMLPrettify"
+			],
+			[
+				"pre",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntax:html",
+				"Set Syntax: HTML"
+			],
+			[
+				"sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"j",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"",
+				"Bookmarks: Select Previous"
+			],
+			[
+				"javascrip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javac",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pret",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"set syntax: html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn",
+				"Set Syntax: JSON"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/boots/datasourceBuilder/panel/main.html",
+		"/D/boots/datasourceBuilder/lib/js/dragAndDropDBStructure.js",
+		"/C/Users/muhammad.thahir/Desktop/test/test bootstrap.html",
+		"/D/boots/datasourceBuilder/lib/css/bottomPanel.css",
+		"/D/boots/datasourceBuilder/panel/bottom.html",
+		"/C/Users/muhammad.thahir/AppData/Roaming/Sublime Text 2/Packages/User/Java.sublime-settings",
+		"/C/Users/muhammad.thahir/Downloads/querytool_testsinarmas.csv",
+		"/C/Users/muhammad.thahir/Desktop/test bootstrap.html",
+		"/C/Users/MUHAMM~1.THA/AppData/Local/Temp/querytool_testsinarmas.csv",
+		"/D/boots/jsPlumb-master/demo/flowchart/dom.html",
+		"/C/Users/muhammad.thahir/Downloads/querytool_testsinarmas(1).csv",
+		"/C/Users/muhammad.thahir/Desktop/test.js",
+		"/D/boots/datasourceBuilder/lib/css/customPlumb.css",
+		"/D/boots/datasourceBuilder/lib/js/app.js",
+		"/D/boots/jsPlumb-master/demo/statemachine/demo.js",
+		"/D/boots/datasourceBuilder/lib/js/plumbing.js",
+		"/D/boots/datasourceBuilder/panel/left.html",
+		"/D/boots/datasourceBuilder/panel/top.html",
+		"/D/boots/datasourceBuilder/index.html",
+		"/D/boots/datasourceBuilder/lib/js/mockServer.js",
+		"/D/boots/datasourceBuilder/bower_components/font-awesome/ext/font-mfizz-2.3.0/font-mfizz.css",
+		"/C/xampp/htdocs/cbhris/index.php",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/mysql/bin/my.ini",
+		"/C/xampp/htdocs/cbhris/protected/config/main.php",
+		"/C/xampp/htdocs/cbhris.sql",
+		"/D/boots/datasourceBuilder/lib/js/contextMenu.js",
+		"/D/boots/datasourceBuilder/bower_components/jQuery-contextMenu/dist/jquery.contextMenu.css",
+		"/C/xampp/htdocs/cbhris/yii/framework/views/error500.php",
+		"/C/xampp/htdocs/cbhris/yii/requirements/messages/config.php",
+		"/C/xampp/htdocs/cbhris/nbproject/private/config.properties",
+		"/D/boots/w2ui/panel/main.html",
+		"/D/boots/w2ui/index.html",
+		"/D/boots/w2ui/lib/js/app.js",
+		"/D/boots/w2ui/panel/bottom.html",
+		"/D/boots/w2ui/lib/css/bottomPanel.css",
+		"/D/boots/w2ui/panel/top.html",
+		"/D/boots/w2ui/lib/js/plumbing.js",
+		"/D/boots/w2ui/panel/left.html",
+		"/D/boots/w2ui/lib/js/dragAndDropDBStructure.js",
+		"/C/Users/muhammad.thahir/AppData/Roaming/Sublime Text 2/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/boots/w2ui/lib/js/mockServer.js",
+		"/D/boots/jsPlumb-master/demo/draggableConnectors/demo.js",
+		"/D/boots/jsPlumb-master/demo/sourcesAndTargets/demo.js",
+		"/D/boots/w2ui/getJsonMockup.html",
+		"/D/boots/w2ui/lib/css/customPlumb.css",
+		"/D/boots/w2ui/panel/top",
+		"/D/boots/w2ui/lib/js/demo.js",
+		"/D/boots/w2ui/lib/object/table.json",
+		"/D/boots/w2ui/bower_components/mockjs/dist/mock-min.js.map",
+		"/C/xampp/htdocs/latihan/studikasus1/view.php",
+		"/D/boots/w2ui/bower_components/w2ui/w2ui-1.4.3.css",
+		"/D/boots/jsPlumb-master/demo/statemachine/dom.html",
+		"/D/boots/w2ui/lib/css/simple-sidebar.css",
+		"/D/boots/w2ui/bower_components/jquery-ui/jquery-ui.js",
+		"/D/LPPSN/SWOT/index.html",
+		"/D/boots/jsPlumb-master/demo/draggableConnectors/dom.html",
+		"/D/boots/w2ui/lib/js/jsplumb.js",
+		"/D/boots/jsPlumb-master/demo/sourcesAndTargets/dom.html",
+		"/C/Users/MUHAMM~1.THA/AppData/Local/Temp/Rar$DRa0.093/metisMenu-master/test/metisFolder.html",
+		"/D/boots/datasource/index.html",
+		"/D/boots/layout-master/demos/tabs_basic.html",
+		"/D/boots/w2ui/startbootstrap-simple-sidebar-1.0.5/index.html",
+		"/D/boots/w2ui/bower_components/font-awesome/css/font-awesome.css",
+		"/D/boots/datasource/w2ui.html",
+		"/D/boots/datasource/bower_components/layout/css/layout-default.css",
+		"/D/boots/datasource/bower_components/layout/js/jquery.layout.js",
+		"/D/boots/resizable/index.html",
+		"/D/boots/datasource/package.json",
+		"/D/boots/datasource/mockup/index.html",
+		"/D/boots/mockup/layout-master/mockup/index.html",
+		"/D/boots/mockup/layout-master/mockup/js/jquery.layout.js",
+		"/C/Users/muhammad.thahir/AppData/Local/Temp/Rar$DIa0.971/layout.jquery.json",
+		"/D/boots/mockup/layout-master/demos/container.html",
+		"/D/boots/mockup/index.html",
+		"/D/boots/mockup/layout-master/demos/tabs_basic.html",
+		"/D/boots/mockup/layout-master/demos/basic.html",
+		"/D/boots/mockup/layout-master/layout.jquery.json",
+		"/D/boots/mockup/lib/main.css",
+		"/D/boots/jsPlumb-master/demo/home/dom.html",
+		"/D/boots/jsPlumb-master/mockup/index.html",
+		"/D/boots/plumbProject/project/app/scripts/app.js",
+		"/D/boots/plumbProject/project/app/index.html",
+		"/D/boots/plumbProject/project/app/styles/main.css",
+		"/D/boots/plumbProject/project/bower.json",
+		"/D/boots/plumbProject/project/app/views/main.html",
+		"/D/boots/plumbProject/project/app/scripts/plumb.js",
+		"/D/boots/plumbProject/project/app/styles/plumb.css",
+		"/D/boots/plumbProject/output_project/app/scripts/controllers/main.js",
+		"/D/boots/plumbProject/output_project/app/views/main.html",
+		"/D/boots/plumbProject/bower_components/jsPlumb/bower.json",
+		"/D/boots/plumbProject/output_project/app/404.html",
+		"/D/boots/plumbProject/output_project/app/favicon.ico",
+		"/D/boots/plumbProject/output_project/.gitattributes",
+		"/D/Workspace Labbing/Cronos_Mod/WebContent/WEB-INF/view/admin/datasource/tableField.jsp",
+		"/D/boots/jsPlumb/node_modules/jsplumb/bower.json",
+		"/D/boots/jsPlumb/node_modules/grunt/package.json",
+		"/C/xampp/htdocs/cuplay/tugas_logout.php",
+		"/C/xampp/htdocs/cuplay/tugas_login.php",
+		"/D/workspace_rest/apache-tomcat-7.0.67/conf/tomcat-users.xml",
+		"/D/boots/jsPlumb/node_modules/jsplumb/package.json",
+		"/C/xampp/htdocs/cuplay/Tugas WEB 2 .php",
+		"/C/xampp/htdocs/cuplay/daftar.php",
+		"/C/xampp/htdocs/cuplay/Scrip latihan 10.php",
+		"/C/xampp/htdocs/cuplay/get.php",
+		"/C/xampp/htdocs/cuplay/box.php",
+		"/C/xampp/htdocs/cuplay/jumlah.php",
+		"/C/xampp/htdocs/cuplay/post.php",
+		"/C/xampp/htdocs/cuplay/db.html",
+		"/C/Users/muhammad.thahir/Desktop/test.html",
+		"/D/Game/Steam/steamapps/common/dota 2 beta/dota/itembuilds/default_riki.txt",
+		"/C/Users/muhammad.thahir/Desktop/yuhuu.csv",
+		"/C/xampp/htdocs/cuplay/table.php",
+		"/C/xampp/htdocs/cuplay/surat.php",
+		"/C/xampp/htdocs/cuplay/date.php",
+		"/C/xampp/htdocs/cuplay/tes aja.php",
+		"/C/xampp/htdocs/cuplay/tugas2.php",
+		"/D/web Template/lab/index.html",
+		"/C/xampp/htdocs/cuplay/loop_prime.php",
+		"/C/xampp/htdocs/cuplay/looping_genap.php",
+		"/C/xampp/htdocs/cuplay/looping_ganjil_kuy.php",
+		"/D/web Template/lab/bower_components/jquery-validator/README.md",
+		"/D/Workspace Labbing/Cronos_Mod/WebContent/WEB-INF/view/admin/datasource/datasource.jsp",
+		"/D/LPPSN/keamanan komputer/Tugas Enkripsi/web project/index.html",
+		"/D/LPPSN/keamanan komputer/Tugas Enkripsi ori/web project/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/D/LPPSN/keamanan komputer/Tugas Enkripsi ori/web project/index.html",
+		"/D/LPPSN/keamanan komputer/web project/DecryptEngine.js",
+		"/D/LPPSN/keamanan komputer/web project/EncryptEngine.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"D:\\boots\\w2ui"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"+",
+			"instan",
+			"console.l",
+			"filter",
+			"initNo",
+			"query",
+			"app",
+			"tip",
+			"organisasi",
+			"input_time",
+			"upload",
+			"max",
+			"upload",
+			"dragg",
+			"fa-plug",
+			"faplug",
+			"plug",
+			"button",
+			"modal",
+			"newNod",
+			"tableModel",
+			"newNode",
+			"mock",
+			"mockSer",
+			"mockS",
+			"console.log('table",
+			"table",
+			"plumbing",
+			"plum",
+			"plumn",
+			"console.log",
+			"newNode",
+			"init",
+			"ajax",
+			"newNode",
+			"initNode",
+			"init",
+			"lib/js",
+			"lib",
+			"bower_components/moc",
+			"bower",
+			"bowe",
+			"mock",
+			"mockser",
+			"js",
+			"mock",
+			"mock.js",
+			"modal",
+			"metis",
+			"demo",
+			"dicen",
+			"5px",
+			"text-al",
+			"sqlView",
+			"code",
+			"here ...",
+			"button.btn",
+			"button",
+			"w2ui",
+			"w2ui.",
+			"dark.",
+			".css",
+			"initNod",
+			"toolkit",
+			"maincon",
+			"connectorStyle : { strokeStyle:\"#666\" }",
+			"connectorStyle",
+			"connectorStyle : { strokeStyle:\"#666\" }",
+			"                    ",
+			"tool",
+			"toolkit",
+			"script",
+			";\n",
+			"jquery-ui",
+			"dragg",
+			"jsplumb",
+			"drag",
+			"jsplumb.rea",
+			"instance",
+			"dragg",
+			"jsplum",
+			"jsplu",
+			"jquery",
+			"jquery-ui",
+			"jsplu",
+			"../../",
+			"jsplu",
+			"canvas",
+			"siz",
+			"resi",
+			"cursor",
+			"jquery",
+			"class=\"meti",
+			"font",
+			"		$(\".",
+			"jquery-ui",
+			"container",
+			"body",
+			"cssEdit",
+			"textArea",
+			"north",
+			"body",
+			"http",
+			"hrrp",
+			"source",
+			"selected",
+			"cr_id",
+			"selecte",
+			"panel-top",
+			"bootstra",
+			"script",
+			"main.css",
+			".js",
+			"main.h",
+			"grunt-copy",
+			"hr",
+			"isPrimeNumber",
+			"txtAddres",
+			"textarea",
+			"txtAddres",
+			"textarea",
+			"type=\"text",
+			"\"text",
+			"=\"Name",
+			"=Name",
+			"nowild",
+			"textarea",
+			"txtArea"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"baseDiv",
+			"300x320",
+			"gallery/320x320.png",
+			"320x320.png",
+			"assets/img/"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/boots/datasourceBuilder/sublime project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 275.0,
+	"status_bar_visible": true
+}
