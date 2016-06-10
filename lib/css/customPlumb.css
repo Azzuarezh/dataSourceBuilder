@@ -27,7 +27,7 @@ body{
     cursor: move;
     float: left;
     background-color:white;
-    position: relative;
+    position: absolute;
     border-radius:4px 4px 4px 4px;         
  }
     

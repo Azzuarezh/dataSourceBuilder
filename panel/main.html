@@ -59,20 +59,7 @@ jsPlumb.ready(function(){
 		                id: "arrow",
 		                length: 5,
 		                foldback: 0.2
-		            } ],
-		             ["Custom", {
-						      create:function(component) {
-						      	console.log('component : ',component);
-						        return $("<select name='dropDownJoin' id='join_'>"+
-						        	"<option value='left'>left join</option>"+
-						        	"<option value='right'>right join</option>"+
-						        	"<option value='inner'>inner join</option>"+
-						        	"<option value='outer'>outer join</option>"+
-						        	"</select>");                
-						      },
-						      location:0.7,
-						      id:"customOverlay"
-						    }]
+		            } ]
 		        ],
 		 Container:'mainContent',
 		 ConnectionsDetachable:true
@@ -98,7 +85,7 @@ jsPlumb.ready(function(){
 		            
 	});
 
-	inst.makeTarget("col_b", {
+	inst.makeSource("col_b", {
 					filter:'.endPointDiv',
 					dropOptions: { hoverClass: "dragHover" },
 		            anchor: "Continuous",

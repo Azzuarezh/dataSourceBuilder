@@ -1,0 +1,16 @@
+join with multiple key
+e.g:
+
+col_a = col_x and
+col_b = col_y
+
+[option]
+- connection just represent a relation
+and if click show the detail (join)
+- two way connection to determine source and target table/view
+
+
+[output]
+-list of database object JSON
+-list of relation object JSON (depend to list of dbo json)
+-list of condition
