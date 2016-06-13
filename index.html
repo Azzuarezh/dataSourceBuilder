@@ -20,14 +20,6 @@
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="bower_components/jquery-ui/ui/position.js"></script>
 
-
-    <script type="text/javascript" src="bower_components/w2ui/w2ui-1.4.3.min.js"></script>
-    <script type="text/javascript" src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/jQuery-contextMenu/dist/jquery.contextMenu.js"></script>
-    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
-    <script src="bower_components/mockjs/dist/mock.js"></script>
-
     <!-- JS -->
     <!-- support lib for bezier stuff -->
     <script src="lib/js/plugin/jsBezier-0.8.js"></script>
@@ -65,12 +57,18 @@
     <!-- common adapter -->
     <script src="bower_components/jsPlumb/src/base-library-adapter.js"></script>
     <!-- no library jsPlumb adapter -->
-    <script src="bower_components/jsPlumb/src/dom.jsPlumb.js"></script>
+    <!--<script src="bower_components/jsPlumb/src/dom.jsPlumb.js"></script>-->
     <script src="bower_components/jsPlumb/src/bezier-editor.js"></script>
 
     <!-- query builder -->
     <script src="bower_components/jQuery-QueryBuilder/dist/js/query-builder.standalone.js"></script>
-        
+    
+    <script type="text/javascript" src="bower_components/w2ui/w2ui-1.4.3.min.js"></script>
+    <script type="text/javascript" src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jQuery-contextMenu/dist/jquery.contextMenu.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="bower_components/mockjs/dist/mock.js"></script>    
          
     <!-- /JS -->
 
@@ -189,7 +187,38 @@
             </div>
         </div>
     </div>
+    <!-- modal groupingNordering  -->
+    <!-- Modal -->
+    <div id="modalJoinProperties" class="modal fade modal-md" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          
+          <div class="modal-header modal-primary">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><i class="fa fa-Slider"></i> Relation Properties</h4>
+             </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="joinType"><i class="fa fa-gears"></i>Join Type:</label>
+                            <select id="joinType" name="driver" class="form-control selectpicker" data-icon-base="fa"
+                            title="Select the join type">                            
+                                <option value="Left" data-icon="fa-arrow-left">Left Join</option>
+                                <option value="Right" data-icon="fa-arrow-right">Right Join</option>
+                                <option value="Inner" data-icon="fa-dot-circle-o">Inner Join</option>                    
+                                <option value="Outter" data-icon="fa-circle-o">Outter Join</option>
+                            </select>
+                    </div>                                         
+                </div>
+                <div class="modal-footer">                        
+                        <a class="btn btn-success" role="button"><i class="fa fa-check" title="Save Changes"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
 
     <script src="lib/js/app.js"></script>
+    <script src="lib/js/dragAndDropDBStructure.js"></script>
+    <script src="lib/js/plumbing.js"></script>
 </body>
 </html>

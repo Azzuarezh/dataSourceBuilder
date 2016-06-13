@@ -1,0 +1,25 @@
+RelationObject ={	
+	Object=[{
+	name:'tbl_a'
+	alias :'tblA'
+	type:'table'
+	column:[{
+			name:col_a,
+			type:'int',
+			isSelected:true
+		}]
+
+	}],
+	referenceObject :tbl_a,
+	Relation[{
+		joinType:'left join'
+		source :[{
+			name :'tbl_a',
+			key:'col_a'
+		}],
+		target:[{
+			name:'tbl_b'
+			key:'col_x'
+		}]
+	}]
+}
