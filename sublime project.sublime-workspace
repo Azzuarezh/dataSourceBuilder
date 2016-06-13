@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
 				"tbl_tb",
 				"tbl_table_1"
 			],
@@ -42,10 +46,6 @@
 			[
 				"body",
 				"bodyContent"
-			],
-			[
-				"for",
-				"for	for (…) {…} (Improved Native For-Loop)"
 			],
 			[
 				"dropp",
@@ -272,20 +272,35 @@
 	"buffers":
 	[
 		{
-			"contents": "RelationObject ={\n	Tables=[{}]\n}",
+			"file": "lib/js/dragAndDropDBStructure.js",
 			"settings":
 			{
-				"buffer_size": 32,
-				"line_ending": "Windows",
-				"name": "RelationObject ={"
+				"buffer_size": 6559,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "dom.html",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6709,
-				"line_ending": "Unix"
+				"buffer_size": 12286,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/js/app.js",
+			"settings":
+			{
+				"buffer_size": 3988,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "panel/left.html",
+			"settings":
+			{
+				"buffer_size": 3134,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -433,6 +448,10 @@
 	},
 	"file_history":
 	[
+		"/D/boots/datasourceBuilder/lib/js/plumbing.js",
+		"/D/boots/datasourceBuilder/RelationObject.json",
+		"/D/boots/datasourceBuilder/demo.js",
+		"/D/boots/datasourceBuilder/dom.html",
 		"/D/boots/jsPlumb-master/demo/statemachine/dom.html",
 		"/D/boots/datasourceBuilder/index.html",
 		"/D/boots/datasourceBuilder/panel/left.html",
@@ -460,7 +479,6 @@
 		"/D/boots/jsPlumb-master/demo/flowchart/dom.html",
 		"/C/Users/muhammad.thahir/Downloads/querytool_testsinarmas(1).csv",
 		"/C/Users/muhammad.thahir/Desktop/test.js",
-		"/D/boots/datasourceBuilder/lib/js/plumbing.js",
 		"/D/boots/datasourceBuilder/panel/top.html",
 		"/D/boots/datasourceBuilder/lib/js/mockServer.js",
 		"/D/boots/datasourceBuilder/bower_components/font-awesome/ext/font-mfizz-2.3.0/font-mfizz.css",
@@ -557,10 +575,7 @@
 		"/C/xampp/htdocs/cuplay/tes aja.php",
 		"/C/xampp/htdocs/cuplay/tugas2.php",
 		"/D/web Template/lab/index.html",
-		"/C/xampp/htdocs/cuplay/loop_prime.php",
-		"/C/xampp/htdocs/cuplay/looping_genap.php",
-		"/C/xampp/htdocs/cuplay/looping_ganjil_kuy.php",
-		"/D/web Template/lab/bower_components/jquery-validator/README.md"
+		"/C/xampp/htdocs/cuplay/loop_prime.php"
 	],
 	"find":
 	{
@@ -579,6 +594,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dropp",
+			"name",
+			"newNode",
+			"mainCont",
+			"newNode",
+			"click",
+			"delete",
+			"data-is-dropped",
+			"bind",
+			"connect",
+			"select",
+			"initNod",
 			"default",
 			"jquer-ui",
 			"initNode",
@@ -694,19 +721,7 @@
 			"http",
 			"hrrp",
 			"source",
-			"selected",
-			"cr_id",
-			"selecte",
-			"panel-top",
-			"bootstra",
-			"script",
-			"main.css",
-			".js",
-			"main.h",
-			"grunt-copy",
-			"hr",
-			"isPrimeNumber",
-			"txtAddres"
+			"selected"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -714,6 +729,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"data-has-dropped",
 			"baseDiv",
 			"300x320",
 			"gallery/320x320.png",
@@ -729,49 +745,51 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "lib/js/dragAndDropDBStructure.js",
 					"settings":
 					{
-						"buffer_size": 32,
+						"buffer_size": 6559,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								32,
-								32
+								6482,
+								6482
 							]
 						],
 						"settings":
 						{
-							"auto_name": "RelationObject ={",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1857.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "dom.html",
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 6709,
+						"buffer_size": 12286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4856,
-								4856
+								10886,
+								10886
 							]
 						],
 						"settings":
@@ -781,7 +799,60 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 2915.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/js/app.js",
+					"settings":
+					{
+						"buffer_size": 3988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3981,
+								3981
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1626.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "panel/left.html",
+					"settings":
+					{
+						"buffer_size": 3134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2361,
+								2361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
