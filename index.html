@@ -196,22 +196,62 @@
           
           <div class="modal-header modal-primary">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title"><i class="fa fa-Slider"></i> Relation Properties</h4>
+            <h4 class="modal-title"><i class="fa fa-chain"></i> Relation Properties</h4>
              </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="joinType"><i class="fa fa-gears"></i>Join Type:</label>
+                        <label for="joinType"><i class="fa fa-gears"></i> Join Type:</label>
                             <select id="joinType" name="driver" class="form-control selectpicker" data-icon-base="fa"
                             title="Select the join type">                            
                                 <option value="Left" data-icon="fa-arrow-left">Left Join</option>
                                 <option value="Right" data-icon="fa-arrow-right">Right Join</option>
                                 <option value="Inner" data-icon="fa-dot-circle-o">Inner Join</option>                    
                                 <option value="Outter" data-icon="fa-circle-o">Outter Join</option>
-                            </select>
+                            </select>                            
                     </div>                                         
-                </div>
-                <div class="modal-footer">                        
-                        <a class="btn btn-success" role="button"><i class="fa fa-check" title="Save Changes"></i></a>
+                    <form class="form-inline">
+                        <div class="row">
+                            <div class="col-md-5 form-group">
+                                <label for="sourceKey"><i class="fa fa-key"></i> Source Key:</label>
+                                <select name="sourceKey" class="form-control selectpicker"
+                                title="Select the source key"></select>                                
+                            </div>                            
+                            <div class="col-md-5 form-group pull-right">                            
+                                <label for="targetKey"><i class="fa fa-key"></i> Target Key:</label>
+                                <select name="targetKey" class="form-control selectpicker"
+                                title="Select the target key"></select>                                                        
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 form-group">                                
+                                <select name="sourceKey" class="form-control selectpicker"
+                                title="Select the source key"></select>
+                            </div>                                                        
+                            <div class="col-md-5 form-group pull-right">              
+                                <select name="targetKey" class="form-control selectpicker"
+                                title="Select the target key"></select>                                                        
+                            </div>
+                            <span><i class="fa fa-times"></i></span>
+                        </div>
+                    </form>                    
+                </div>                
+                <div class="modal-footer">                    
+                    <a class="btn btn-info tip" 
+                        title="Add Keys" 
+                        role="button">
+                        <i class="fa fa-key fa-plus"></i>
+                    </a>    
+                    <a class="btn btn-danger tip" 
+                        title="Remove Relation" 
+                        role="button">
+                        <i class="fa fa-unlink"></i>
+                    </a>
+                    <a class="btn btn-success tip" 
+                        title="Save Changes" 
+                        role="button">
+                        <i class="fa fa-link"></i>
+                    </a>
+
                     </div>
             </div>
         </div>
