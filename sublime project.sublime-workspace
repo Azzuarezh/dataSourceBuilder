@@ -275,7 +275,7 @@
 			"file": "lib/js/dragAndDropDBStructure.js",
 			"settings":
 			{
-				"buffer_size": 6559,
+				"buffer_size": 6653,
 				"line_ending": "Windows"
 			}
 		},
@@ -283,7 +283,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 12286,
+				"buffer_size": 14788,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/js/watcher.js",
+			"settings":
+			{
+				"buffer_size": 21,
 				"line_ending": "Windows"
 			}
 		},
@@ -302,6 +310,14 @@
 				"buffer_size": 3134,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "panel/bottom.html",
+			"settings":
+			{
+				"buffer_size": 3056,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -310,6 +326,14 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"",
+				"About"
+			],
+			[
+				"syntax:java",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"set",
 				"Set Syntax: Java"
@@ -387,10 +411,6 @@
 				"Set Syntax: JavaDoc"
 			],
 			[
-				"",
-				"Bookmarks: Select Previous"
-			],
-			[
 				"javascrip",
 				"Set Syntax: JavaScript"
 			],
@@ -431,7 +451,7 @@
 				"Snippet: Lorem ipsum"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -594,6 +614,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"newNode",
+			"overLay",
+			"form-group",
+			"inco",
+			"bind",
+			"plumbt",
 			"dropp",
 			"name",
 			"newNode",
@@ -715,13 +741,7 @@
 			"container",
 			"body",
 			"cssEdit",
-			"textArea",
-			"north",
-			"body",
-			"http",
-			"hrrp",
-			"source",
-			"selected"
+			"textArea"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -753,15 +773,15 @@
 					"file": "lib/js/dragAndDropDBStructure.js",
 					"settings":
 					{
-						"buffer_size": 6559,
+						"buffer_size": 6653,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6482,
-								6482
+								1090,
+								1090
 							]
 						],
 						"settings":
@@ -770,8 +790,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 1857.0,
+						"translation.x": 87.0,
+						"translation.y": 267.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -781,15 +801,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 12286,
+						"buffer_size": 14788,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10886,
-								10886
+								1712,
+								1712
 							]
 						],
 						"settings":
@@ -799,13 +819,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2915.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "lib/js/watcher.js",
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "lib/js/app.js",
 					"settings":
 					{
@@ -826,13 +872,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1626.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "panel/left.html",
 					"settings":
 					{
@@ -853,6 +899,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "panel/bottom.html",
+					"settings":
+					{
+						"buffer_size": 3056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1709,
+								1709
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

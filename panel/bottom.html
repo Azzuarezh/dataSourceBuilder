@@ -22,8 +22,11 @@
   <!-- Tab panes -->
   <div class="tab-content">    
     <div role="tabpanel" class="tab-pane fade in active" id="sqlTab">
-      <code id="selectedFieldCode">SELECT&nbsp;
-          <span class="label label-default">&lt;distinct&gt;</span>&nbsp;
+      <code id="selectSyntax">
+        SELECT&nbsp;<span class="label label-default">&lt;TOP n (SQL Server)&gt;</span> 
+      </code>
+      <code id="selectedFieldCode">
+          <span class="label label-default">&lt;distinct&gt;</span>&nbsp;          
           <span class="label label-success">&lt;fn&gt;</span>&nbsp;
           <span class="label label-info">&lt;fieldNames&gt;</span>&nbsp;
           <span class="label label-default">&lt;alias&gt;</span>&nbsp;
@@ -40,7 +43,8 @@
       </code><br/>
       <code id="OrderSyntax">ORDER BY&nbsp;
           <span class="label label-info">&lt;fieldName&gt;</span>
-      </code>
+           <span class="label label-default">&lt;Limit n&gt;</span>
+      </code>            
       <div clas="qb">
       </div>        
     </div>
