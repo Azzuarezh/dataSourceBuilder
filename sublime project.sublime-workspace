@@ -275,7 +275,7 @@
 			"file": "lib/js/dragAndDropDBStructure.js",
 			"settings":
 			{
-				"buffer_size": 6653,
+				"buffer_size": 6539,
 				"line_ending": "Windows"
 			}
 		},
@@ -283,7 +283,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14788,
+				"buffer_size": 14795,
 				"line_ending": "Windows"
 			}
 		},
@@ -316,6 +316,22 @@
 			"settings":
 			{
 				"buffer_size": 3056,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/js/contextMenu.js",
+			"settings":
+			{
+				"buffer_size": 4720,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/css/customPlumb.css",
+			"settings":
+			{
+				"buffer_size": 1369,
 				"line_ending": "Windows"
 			}
 		}
@@ -614,6 +630,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"append",
+			"mainCon",
 			"newNode",
 			"overLay",
 			"form-group",
@@ -739,9 +757,7 @@
 			"		$(\".",
 			"jquery-ui",
 			"container",
-			"body",
-			"cssEdit",
-			"textArea"
+			"body"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -773,15 +789,15 @@
 					"file": "lib/js/dragAndDropDBStructure.js",
 					"settings":
 					{
-						"buffer_size": 6653,
+						"buffer_size": 6539,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1090,
-								1090
+								4041,
+								4041
 							]
 						],
 						"settings":
@@ -790,8 +806,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 87.0,
-						"translation.y": 267.0,
+						"translation.x": 0.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -801,15 +817,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 14788,
+						"buffer_size": 14795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1712,
-								1712
+								0,
+								0
 							]
 						],
 						"settings":
@@ -923,6 +939,62 @@
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/js/contextMenu.js",
+					"settings":
+					{
+						"buffer_size": 4720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4285,
+								4404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 944.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lib/css/customPlumb.css",
+					"settings":
+					{
+						"buffer_size": 1369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								424,
+								424
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,

@@ -24,7 +24,7 @@ body{
 .plumbTable {
     height:100px; width: 130px;    
     border: 1px solid #eeee;
-    cursor: move;
+    cursor: hand;
     float: left;
     background-color:white;
     position: absolute;
