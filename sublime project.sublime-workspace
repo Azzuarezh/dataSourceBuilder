@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"targ",
+				"targetKey"
+			],
+			[
+				"listOf",
+				"listOfKeys_target"
+			],
+			[
+				"listo",
+				"listOfKeys_target"
+			],
+			[
+				"source",
+				"sourceKey"
+			],
+			[
+				"list",
+				"listOfKeys_source"
+			],
+			[
+				"lis",
+				"listOfKeys_source"
+			],
+			[
 				"for",
 				"for	for (…) {…}"
 			],
@@ -275,7 +299,7 @@
 			"file": "lib/js/dragAndDropDBStructure.js",
 			"settings":
 			{
-				"buffer_size": 6539,
+				"buffer_size": 8839,
 				"line_ending": "Windows"
 			}
 		},
@@ -283,31 +307,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14795,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "lib/js/watcher.js",
-			"settings":
-			{
-				"buffer_size": 21,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "lib/js/app.js",
-			"settings":
-			{
-				"buffer_size": 3988,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "panel/left.html",
-			"settings":
-			{
-				"buffer_size": 3134,
+				"buffer_size": 14779,
 				"line_ending": "Windows"
 			}
 		},
@@ -331,7 +331,15 @@
 			"file": "lib/css/customPlumb.css",
 			"settings":
 			{
-				"buffer_size": 1369,
+				"buffer_size": 1563,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "RelationObject.json",
+			"settings":
+			{
+				"buffer_size": 630,
 				"line_ending": "Windows"
 			}
 		}
@@ -484,17 +492,18 @@
 	},
 	"file_history":
 	[
+		"/D/boots/datasourceBuilder/panel/left.html",
+		"/D/boots/datasourceBuilder/lib/js/app.js",
+		"/D/boots/datasourceBuilder/lib/js/watcher.js",
+		"/D/boots/jsPlumb-master/demo/statemachine/demo.js",
 		"/D/boots/datasourceBuilder/lib/js/plumbing.js",
 		"/D/boots/datasourceBuilder/RelationObject.json",
 		"/D/boots/datasourceBuilder/demo.js",
 		"/D/boots/datasourceBuilder/dom.html",
 		"/D/boots/jsPlumb-master/demo/statemachine/dom.html",
 		"/D/boots/datasourceBuilder/index.html",
-		"/D/boots/datasourceBuilder/panel/left.html",
 		"/D/boots/datasourceBuilder/lib/js/dragAndDropDBStructure.js",
-		"/D/boots/datasourceBuilder/lib/js/app.js",
 		"/D/boots/jsPlumb-master/src/dom.jsPlumb.js",
-		"/D/boots/jsPlumb-master/demo/statemachine/demo.js",
 		"/D/boots/jsPlumb-master/demo/demo-list.js",
 		"/D/boots/jsPlumb-master/dist/js/demo-list.js",
 		"/D/boots/datasourceBuilder/panel/main.html",
@@ -610,8 +619,7 @@
 		"/C/xampp/htdocs/cuplay/date.php",
 		"/C/xampp/htdocs/cuplay/tes aja.php",
 		"/C/xampp/htdocs/cuplay/tugas2.php",
-		"/D/web Template/lab/index.html",
-		"/C/xampp/htdocs/cuplay/loop_prime.php"
+		"/D/web Template/lab/index.html"
 	],
 	"find":
 	{
@@ -630,6 +638,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"label",
+			"fillStyle",
+			"times",
+			"selectpick",
+			"selectpiker",
+			"console.logo",
+			"connection",
+			"bs.modal",
 			"append",
 			"mainCon",
 			"newNode",
@@ -749,15 +765,7 @@
 			"jsplu",
 			"canvas",
 			"siz",
-			"resi",
-			"cursor",
-			"jquery",
-			"class=\"meti",
-			"font",
-			"		$(\".",
-			"jquery-ui",
-			"container",
-			"body"
+			"resi"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -781,7 +789,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -789,15 +797,15 @@
 					"file": "lib/js/dragAndDropDBStructure.js",
 					"settings":
 					{
-						"buffer_size": 6539,
+						"buffer_size": 8839,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4041,
-								4041
+								7541,
+								7541
 							]
 						],
 						"settings":
@@ -807,7 +815,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 990.0,
+						"translation.y": 2323.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -817,15 +825,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 14795,
+						"buffer_size": 14779,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								14363,
+								14377
 							]
 						],
 						"settings":
@@ -835,92 +843,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 3362.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "lib/js/watcher.js",
-					"settings":
-					{
-						"buffer_size": 21,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21,
-								21
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "lib/js/app.js",
-					"settings":
-					{
-						"buffer_size": 3988,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3981,
-								3981
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "panel/left.html",
-					"settings":
-					{
-						"buffer_size": 3134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2361,
-								2361
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 585.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "panel/bottom.html",
 					"settings":
 					{
@@ -948,7 +877,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "lib/js/contextMenu.js",
 					"settings":
 					{
@@ -976,19 +905,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 4,
 					"file": "lib/css/customPlumb.css",
 					"settings":
 					{
-						"buffer_size": 1369,
+						"buffer_size": 1563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								424,
-								424
+								0,
+								0
 							]
 						],
 						"settings":
@@ -996,6 +925,33 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "RelationObject.json",
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								628,
+								628
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

@@ -75,6 +75,15 @@ body{
     position :absolute;
     left: 3px;    
 }
+/*label for overlay styling*/
+.joinOverlay {
+    background-color: #1e8151;
+    border: 1px solid #1e8151;
+    border-radius: 0.5em;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0.3em;
+}
 
 .endPointDiv{
     position:absolute;    
