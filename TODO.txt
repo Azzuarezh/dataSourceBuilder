@@ -1,0 +1,4 @@
+current progress
+create aliasing table (done 1 way. no reset) 
+create function column (on progress)
+create alias column (not yet)

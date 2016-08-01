@@ -1,6 +1,6 @@
 {
   "name": "jsPlumb",
-  "version": "2.1.2",
+  "version": "2.1.4",
   "ignore": [
     "demo",
     "dist/apidocs",
@@ -31,7 +31,7 @@
     "test"
   ],
   "main": [
-    "dist/js/jsPlumb-2.0.7.js"
+    "dist/js/jsPlumb-2.1.4.js"
   ],
   "homepage": "http://jsplumbtoolkit.com",
   "authors": [
@@ -39,14 +39,13 @@
   ],
   "description": "Visual connectivity for webapps",
   "license": "/jsPlumb-LICENSE.txt",
-  "_release": "2.1.2",
+  "_release": "2.1.4",
   "_resolution": {
     "type": "version",
-    "tag": "2.1.2",
-    "commit": "bc2a814e208e27247e8e0fc108f614c20dbb5fb6"
+    "tag": "2.1.4",
+    "commit": "b8287ab90ce5f460ad1bd9cdb602d3f41050a354"
   },
   "_source": "https://github.com/sporritt/jsPlumb.git",
   "_target": "^2.1.2",
-  "_originalSource": "jsplumb",
-  "_direct": true
+  "_originalSource": "jsplumb"
 }

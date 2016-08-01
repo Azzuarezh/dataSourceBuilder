@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"propm",
+				"promptAlias"
+			],
+			[
+				"endpont",
+				"endPointRight"
+			],
+			[
+				"jsplu",
+				"jsplumb-dbObject-icon"
+			],
+			[
+				"jsplumb",
+				"jsplumb-close-icon"
+			],
+			[
+				"prompt",
+				"promptAlias"
+			],
+			[
 				"targ",
 				"targetKey"
 			],
@@ -296,10 +316,18 @@
 	"buffers":
 	[
 		{
-			"file": "lib/js/dragAndDropDBStructure.js",
+			"file": "panel/left.html",
 			"settings":
 			{
-				"buffer_size": 8839,
+				"buffer_size": 3134,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "panel/main.html",
+			"settings":
+			{
+				"buffer_size": 132,
 				"line_ending": "Windows"
 			}
 		},
@@ -320,36 +348,60 @@
 			}
 		},
 		{
+			"contents": "$(document).ready(function(){\n	\n	$.contextMenu({\n		selector:'div.plumbColumn',\n		/*autoHide : true,*/\n		items: {\n                \"colAlias\":{\n                    name :\"Alias\",\n                    callback: function(key,options){\n                        aliasingFunction(key,options)\n                    }                    \n                }\n                ,\n                \"separator\": \"---------\",                    			\n                \"fn\": {\n                	name: \"Function\", icon: function(){\n                        return 'context-menu-icon context-menu-icon-fn';\n                	},\n                    items:{\n                        \"aggregate\": {\n                            name: \"Aggregate\", \n                            icon: function(){\n                                return 'context-menu-icon context-menu-icon-aggregate';\n                            }, \n                            items:{\n                                \"count\":{\n                                    name:\"Count\",\n                                    icon: function(){\n                                        return 'context-menu-icon context-menu-icon-count';\n                                         },\n                                    callback: function(key,options){\n                                           \n                                           selector.html() sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"sum\":{\n                                    name:\"Sum\", \n                                    icon:function(){\n                                            return 'context-menu-icon context-menu-icon-sum';\n                                        },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"avg\":{\n                                    name:\"Average\",\n                                    icon: function(){\n                                        return 'context-menu-icon context-menu-icon-avg';\n                                         },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"min\":{\n                                    name:\"Min\",\n                                    icon : function(){\n                                        return 'context-menu-icon context-menu-icon-min';\n                                        },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"max\":{\n                                    name:\"Max\",\n                                    icon : function(){\n                                        return 'context-menu-icon context-menu-icon-max';\n                                        },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                }\n                            }\n                        },\n                        \"scalar\": {\n                            name: \"Scalar\", \n                            icon:function(){\n                                        return 'context-menu-icon context-menu-icon-scalar';\n                            },\n                            items:\n                                {\n                                    \"ucase\":{\n                                            name:\"Upper Case\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-ucase';\n                                                }\n                                        },\n                                    \"lcase\":{\n                                            name:\"Lower Case\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-lcase';\n                                                }\n                                        },\n                                    \"mid\":{\n                                            name:\"Mid\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnMid';\n                                                }\n                                        },\n                                    \"len\":{\n                                            name:\"Length of\", \n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-len';\n                                                }\n                                    },\n                                    \"round\":{\n                                            name:\"Round\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnRound';\n                                                }\n                                        },\n                                    \"now\":{\n                                            name:\"Now\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnNow';\n                                                }\n                                        },\n                                    \"format\":{\n                                            name:\"Format\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnFormat';\n                                                }\n                                    }\n                                }\n                        },\n                        \"type_cast\" :{\n                            name:\"Type Casting\",\n                            icon:function(){\n                                return 'context-menu-icon context-menu-icon-TypeCast';\n                            }, \n                            items:{\n                                \"TBA\": {name:\"To Be Thought\"}    \n                            }                    \n                        }\n                    }\n                }\n            }\n	})\n$.contextMenu({\n        selector:'div.plumbHeader',\n        items:{\n                        \"objectAlias\": {name:\"Alias\"}    \n                    },\n        callback: function(key,options){\n            aliasingFunction(key,options)   \n        }  \n})\n})",
 			"file": "lib/js/contextMenu.js",
+			"file_size": 7241,
+			"file_write_time": 131129688094113369,
 			"settings":
 			{
-				"buffer_size": 4720,
+				"buffer_size": 7155,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "lib/css/customPlumb.css",
+			"file": "lib/js/dragAndDropDBStructure.js",
 			"settings":
 			{
-				"buffer_size": 1563,
+				"buffer_size": 9058,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "RelationObject.json",
+			"file": "lib/js/contextCallbackFunction.js",
 			"settings":
 			{
-				"buffer_size": 630,
+				"buffer_size": 2661,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "panel/top.html",
+			"settings":
+			{
+				"buffer_size": 1310,
 				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 58.0,
+		"last_filter": "json",
 		"selected_items":
 		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"types",
+				"Set Syntax: TypeScript"
+			],
 			[
 				"",
 				"About"
@@ -373,10 +425,6 @@
 			[
 				"java",
 				"Snippet: java.io."
-			],
-			[
-				"json",
-				"Set Syntax: JSON"
 			],
 			[
 				"html",
@@ -475,11 +523,14 @@
 				"Snippet: Lorem ipsum"
 			]
 		],
-		"width": 400.0
+		"width": 432.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -490,24 +541,37 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/D/boots/datasourceBuilder",
+		"/D/boots/datasourceBuilder/lib",
+		"/D/boots/datasourceBuilder/lib/js",
+		"/D/boots/datasourceBuilder/panel"
+	],
 	"file_history":
 	[
+		"/C/Users/muhammad.thahir/Desktop/testtable.html",
+		"/D/boots/datasourceBuilder/lib/js/columnFunction.js",
+		"/D/boots/datasourceBuilder/lib/js/columnFunction",
+		"/D/boots/datasourceBuilder/RelationObject.json",
+		"/D/boots/datasourceBuilder/lib/css/customPlumb.css",
+		"/D/boots/datasourceBuilder/feedback.txt",
+		"/D/boots/datasourceBuilder/lib/js/dragAndDropDBStructure.js",
+		"/C/Users/muhammad.thahir/AppData/Roaming/Sublime Text 3/Packages/TypeScript/TypeScript.sublime-settings",
+		"/C/Users/muhammad.thahir/AppData/Roaming/Sublime Text 3/Packages/TypeScript/Preferences.sublime-settings",
 		"/D/boots/datasourceBuilder/panel/left.html",
 		"/D/boots/datasourceBuilder/lib/js/app.js",
 		"/D/boots/datasourceBuilder/lib/js/watcher.js",
 		"/D/boots/jsPlumb-master/demo/statemachine/demo.js",
 		"/D/boots/datasourceBuilder/lib/js/plumbing.js",
-		"/D/boots/datasourceBuilder/RelationObject.json",
 		"/D/boots/datasourceBuilder/demo.js",
 		"/D/boots/datasourceBuilder/dom.html",
 		"/D/boots/jsPlumb-master/demo/statemachine/dom.html",
 		"/D/boots/datasourceBuilder/index.html",
-		"/D/boots/datasourceBuilder/lib/js/dragAndDropDBStructure.js",
 		"/D/boots/jsPlumb-master/src/dom.jsPlumb.js",
 		"/D/boots/jsPlumb-master/demo/demo-list.js",
 		"/D/boots/jsPlumb-master/dist/js/demo-list.js",
 		"/D/boots/datasourceBuilder/panel/main.html",
-		"/D/boots/datasourceBuilder/lib/css/customPlumb.css",
 		"/D/boots/jsPlumb-master/src/jsPlumb.js",
 		"/D/boots/jsPlumb-master/src/connection.js",
 		"/D/boots/jsPlumb-master/demo/sourcesAndTargets/demo.js",
@@ -613,17 +677,11 @@
 		"/C/xampp/htdocs/cuplay/db.html",
 		"/C/Users/muhammad.thahir/Desktop/test.html",
 		"/D/Game/Steam/steamapps/common/dota 2 beta/dota/itembuilds/default_riki.txt",
-		"/C/Users/muhammad.thahir/Desktop/yuhuu.csv",
-		"/C/xampp/htdocs/cuplay/table.php",
-		"/C/xampp/htdocs/cuplay/surat.php",
-		"/C/xampp/htdocs/cuplay/date.php",
-		"/C/xampp/htdocs/cuplay/tes aja.php",
-		"/C/xampp/htdocs/cuplay/tugas2.php",
-		"/D/web Template/lab/index.html"
+		"/C/Users/muhammad.thahir/Desktop/yuhuu.csv"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -638,6 +696,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"			",
+			"contextme",
+			"component",
+			"alias",
+			"initNode",
+			"conn'",
+			"conn",
 			"label",
 			"fillStyle",
 			"times",
@@ -758,14 +823,7 @@
 			"dragg",
 			"jsplum",
 			"jsplu",
-			"jquery",
-			"jquery-ui",
-			"jsplu",
-			"../../",
-			"jsplu",
-			"canvas",
-			"siz",
-			"resi"
+			"jquery"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -780,7 +838,7 @@
 			"320x320.png",
 			"assets/img/"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -789,40 +847,69 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "lib/js/dragAndDropDBStructure.js",
+					"file": "panel/left.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8839,
+						"buffer_size": 3134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7541,
-								7541
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2323.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "panel/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "index.html",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 14779,
@@ -832,8 +919,8 @@
 						"selection":
 						[
 							[
-								14363,
-								14377
+								1323,
+								1332
 							]
 						],
 						"settings":
@@ -843,14 +930,16 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3362.0,
+						"translation.y": 675.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "panel/bottom.html",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 3056,
@@ -874,22 +963,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "lib/js/contextMenu.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4720,
+						"buffer_size": 7155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4285,
-								4404
+								1308,
+								1308
 							]
 						],
 						"settings":
@@ -899,64 +990,97 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 944.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "lib/css/customPlumb.css",
-					"settings":
-					{
-						"buffer_size": 1563,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "RelationObject.json",
+					"file": "lib/js/dragAndDropDBStructure.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 630,
+						"buffer_size": 9058,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								628,
-								628
+								3893,
+								3893
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 922.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/js/contextCallbackFunction.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "panel/top.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1240,
+								1240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -964,7 +1088,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -993,14 +1117,21 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime project.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1009,6 +1140,7 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1018,10 +1150,26 @@
 		],
 		"width": 380.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 275.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

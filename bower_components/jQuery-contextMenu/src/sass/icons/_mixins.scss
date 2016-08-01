@@ -25,7 +25,8 @@ $context-menu-icons: () !default;
   &:#{$position} {
     @if $icon {
       // A particular icon has been specified
-      content: "#{map-get($context-menu-icons, $icon)}";
+      content: #{"\"\\"}#{map-get($context-menu-icons, $icon) + "\""};
+
     }
     // Include any extra rules supplied for the pseudo-element
     @content;
@@ -54,10 +55,10 @@ $context-menu-icons: () !default;
   }
 }
 
-%context-menu-icon {
-  &:before {
+@mixin base-context-menu-icon($icon-font: "context-menu-icons") {
+  &::before {
     color: $context-menu-icon-color;
-    font-family: "context-menu-icons";
+    font-family: $icon-font;
     font-style: normal;
     font-weight: normal;
     font-size: $context-menu-icon-size;
@@ -69,7 +70,7 @@ $context-menu-icons: () !default;
     transform: translateY(-50%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width: 28px;
+    width: 2em;
   }
 }
 

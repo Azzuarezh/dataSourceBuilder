@@ -1,0 +1,25 @@
+{
+  "name": "datasoucebuilder",
+  "version": "1.0.0",
+  "description": "data souce builder ",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azzuarezh/dataSourceBuilder.git"
+  },
+  "keywords": [
+    "data",
+    "source"
+  ],
+  "author": "azzuarezh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azzuarezh/dataSourceBuilder/issues"
+  },
+  "homepage": "https://github.com/Azzuarezh/dataSourceBuilder#readme"
+}

@@ -10,6 +10,9 @@
 		<a role="button" class="btn btn-default btn-md-1 tip" title="Execute">
 			<i class="fa fa-exclamation" style="color:red"></i>
 		</a>
+		<a role="button" id="btnRefresh" class="btn btn-default btn-md-1 tip" title="Refresh">
+			<i class="fa fa-refresh"></i>
+		</a>
 		<a role="button" data-target="#modalExport" class="btn btn-default btn-md-1 tip" data-toggle="modal" title="Export Data Source">
 			<i class="fa fa-cloud-upload" style="color:lightblue"></i>
 		</a>
@@ -21,5 +24,14 @@
 <script>
 $(function(){
 	$('.tip').tooltip();
+	$('#btnRefresh').on('click',function(){
+		var refIcon = $(this);
+		refIcon.find('i.fa').addClass('fa-spin');
+		setTimeout(function(){
+			console.log('time out')
+			refIcon.find('i.fa').removeClass('fa-spin')
+		},1000);
+		//$(this).find('i.fa').removeClass('fa-spin');
+	})
 })
 </script>
