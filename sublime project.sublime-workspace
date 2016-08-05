@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getOriginalFieldFromKey"
+			],
+			[
+				"type",
+				"aggregateTypeSet"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"promptAli",
+				"promptAlias"
+			],
+			[
+				"set",
+				"setColumnTitle"
+			],
+			[
+				"aggre",
+				"aggregateTypeSet"
+			],
+			[
 				"propm",
 				"promptAlias"
 			],
@@ -46,10 +70,6 @@
 			[
 				"lis",
 				"listOfKeys_source"
-			],
-			[
-				"for",
-				"for	for (…) {…}"
 			],
 			[
 				"tbl_tb",
@@ -327,7 +347,7 @@
 			"file": "panel/main.html",
 			"settings":
 			{
-				"buffer_size": 132,
+				"buffer_size": 177,
 				"line_ending": "Windows"
 			}
 		},
@@ -335,7 +355,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14779,
+				"buffer_size": 14844,
 				"line_ending": "Windows"
 			}
 		},
@@ -348,29 +368,38 @@
 			}
 		},
 		{
-			"contents": "$(document).ready(function(){\n	\n	$.contextMenu({\n		selector:'div.plumbColumn',\n		/*autoHide : true,*/\n		items: {\n                \"colAlias\":{\n                    name :\"Alias\",\n                    callback: function(key,options){\n                        aliasingFunction(key,options)\n                    }                    \n                }\n                ,\n                \"separator\": \"---------\",                    			\n                \"fn\": {\n                	name: \"Function\", icon: function(){\n                        return 'context-menu-icon context-menu-icon-fn';\n                	},\n                    items:{\n                        \"aggregate\": {\n                            name: \"Aggregate\", \n                            icon: function(){\n                                return 'context-menu-icon context-menu-icon-aggregate';\n                            }, \n                            items:{\n                                \"count\":{\n                                    name:\"Count\",\n                                    icon: function(){\n                                        return 'context-menu-icon context-menu-icon-count';\n                                         },\n                                    callback: function(key,options){\n                                           \n                                           selector.html() sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"sum\":{\n                                    name:\"Sum\", \n                                    icon:function(){\n                                            return 'context-menu-icon context-menu-icon-sum';\n                                        },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"avg\":{\n                                    name:\"Average\",\n                                    icon: function(){\n                                        return 'context-menu-icon context-menu-icon-avg';\n                                         },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"min\":{\n                                    name:\"Min\",\n                                    icon : function(){\n                                        return 'context-menu-icon context-menu-icon-min';\n                                        },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                    },\n                                \"max\":{\n                                    name:\"Max\",\n                                    icon : function(){\n                                        return 'context-menu-icon context-menu-icon-max';\n                                        },\n                                    callback: function(key,options){\n                                            sqlFunction(key,options)   \n                                        }\n                                }\n                            }\n                        },\n                        \"scalar\": {\n                            name: \"Scalar\", \n                            icon:function(){\n                                        return 'context-menu-icon context-menu-icon-scalar';\n                            },\n                            items:\n                                {\n                                    \"ucase\":{\n                                            name:\"Upper Case\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-ucase';\n                                                }\n                                        },\n                                    \"lcase\":{\n                                            name:\"Lower Case\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-lcase';\n                                                }\n                                        },\n                                    \"mid\":{\n                                            name:\"Mid\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnMid';\n                                                }\n                                        },\n                                    \"len\":{\n                                            name:\"Length of\", \n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-len';\n                                                }\n                                    },\n                                    \"round\":{\n                                            name:\"Round\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnRound';\n                                                }\n                                        },\n                                    \"now\":{\n                                            name:\"Now\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnNow';\n                                                }\n                                        },\n                                    \"format\":{\n                                            name:\"Format\",\n                                            icon:function(){\n                                                return 'context-menu-icon context-menu-icon-fnFormat';\n                                                }\n                                    }\n                                }\n                        },\n                        \"type_cast\" :{\n                            name:\"Type Casting\",\n                            icon:function(){\n                                return 'context-menu-icon context-menu-icon-TypeCast';\n                            }, \n                            items:{\n                                \"TBA\": {name:\"To Be Thought\"}    \n                            }                    \n                        }\n                    }\n                }\n            }\n	})\n$.contextMenu({\n        selector:'div.plumbHeader',\n        items:{\n                        \"objectAlias\": {name:\"Alias\"}    \n                    },\n        callback: function(key,options){\n            aliasingFunction(key,options)   \n        }  \n})\n})",
 			"file": "lib/js/contextMenu.js",
-			"file_size": 7241,
-			"file_write_time": 131129688094113369,
 			"settings":
 			{
-				"buffer_size": 7155,
+				"buffer_size": 7255,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/*this file provide handle\nsql object function\nlike aliasing table/column/view count, max, min, average column and etc\n*/\nvar aggregateTypeSet = ['count','sum','min','max','avg'];\nvar scalarTypeSet =[''];\n\n\n//set columnTitle (name to show in the ui)\nfunction setColumnTitle(title){\n	return 	 '<span class=\"endPointDiv endPointLeft\">&#8226;</span>'+ title +'<span class=\"endPointDiv endPointRight\">&#8226;</span>';	\n}\n\nfunction getOriginalFieldFromKey(fn,columnName){\n	var sql =''\n	for (var i = aggregateTypeSet.length - 1; i >= 0; i--) {		\n		if(fn == aggregateTypeSet[i]){\n			sql = aggregateTypeSet[i] +'('+ columnName +')';	\n			break;\n		}else continue\n	}\n	return sql\n}\n\n\n//to show original field\nfunction checkColumnFunction (key,options){\n	var selector = options.$trigger[0];	\n	var colName = $(selector).data('columnName');\n	$(selector).popover('destroy');\n	if(key != 'colAlias' || key != 'objectAlias'){\n		$(selector).data('columnFunction',key);				\n	}	\n}\n\n$('#mainContent').on('click','.plumbColumn',function(){\n	$(this).popover('destroy')\n})\n\n\n//aliasing the database object name\nfunction aliasingFunction(key,options){\n	var selector = options.$trigger[0];	\n    var objectIcon = $(selector).find('span.jsplumb-dbObject-icon').html();\n    var closeIcon = $(selector).find('span.jsplumb-close-icon').html();    \n    var parentSelector = $(selector).parent('div.plumbTable');//.data('tableName');\n    var promptAlias ={};       \n    if(key == 'objectAlias'){\n    		//for object model (table/view name)    \n    		bootbox.prompt(\n    			{\n    				title:'Alias',\n    				placeholder:(parentSelector.data('alias') === false)?$(selector).text(): parentSelector.data('alias'),\n    				callback : function(result){\n    					if (result != null) {\n					    	var objectSpan = '<span class=\"jsplumb-dbObject-icon\">'+objectIcon+'</span>';\n						    var closeSpan = '<span class=\"jsplumb-close-icon\">'+closeIcon+'</span>';                        \n						    $(selector).html(objectSpan + result + closeSpan);\n						    parentSelector.attr('data-alias',result);\n				  		}\n    				}\n    			});    		    		\n		                		\n	    }else if(key == 'colAlias'){ \n	    	//for object column (table/view name)		    		\n			bootbox.prompt(\n				{\n						title:\"Alias\",\n						placeholder :($(selector).data('columnAlias') == false)? $(selector).data('columnName') : $(selector).data('columnAlias') ,\n						callback:function(result) {                \n				  		if (result != null) {\n					    	var colAlias = result;			    			    			    		    			    	\n			    			$(selector).data('columnAlias',colAlias);	    		\n			    			$(selector).html(setColumnTitle(colAlias));//showing in the table			    			\n				  		}	 \n					}\n				});		    	\n	    }\n\n}",
+			"file": "lib/js/contextCallbackFunction.js",
+			"file_size": 2955,
+			"file_write_time": 131147762397130581,
+			"settings":
+			{
+				"buffer_size": 2712,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/js/bootDialog.js",
+			"settings":
+			{
+				"buffer_size": 462,
+				"line_ending": "Windows",
+				"name": "this is a library that handle bootbox dialog"
 			}
 		},
 		{
 			"file": "lib/js/dragAndDropDBStructure.js",
 			"settings":
 			{
-				"buffer_size": 9058,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "lib/js/contextCallbackFunction.js",
-			"settings":
-			{
-				"buffer_size": 2661,
+				"buffer_size": 9352,
 				"line_ending": "Windows"
 			}
 		},
@@ -390,10 +419,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 58.0,
-		"last_filter": "json",
+		"height": 196.0,
+		"last_filter": "java",
 		"selected_items":
 		[
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"json",
 				"Set Syntax: JSON"
@@ -421,10 +454,6 @@
 			[
 				"set syntax: ja",
 				"Set Syntax: Java"
-			],
-			[
-				"java",
-				"Snippet: java.io."
 			],
 			[
 				"html",
@@ -545,11 +574,15 @@
 	[
 		"/D/boots/datasourceBuilder",
 		"/D/boots/datasourceBuilder/lib",
-		"/D/boots/datasourceBuilder/lib/js",
-		"/D/boots/datasourceBuilder/panel"
+		"/D/boots/datasourceBuilder/lib/js"
 	],
 	"file_history":
 	[
+		"/D/Workspace Labbing/Cronos/WebContent/resources/jsp/soldev/soldev.datatable.jsp",
+		"/D/Workspace Labbing/Cronos/WebContent/WEB-INF/view/resource/header.jsp",
+		"/D/boots/datasourceBuilder/lib/js/app.js",
+		"/D/boots/datasourceBuilder/package.json",
+		"/D/boots/testGrunt/Gruntfiles.js",
 		"/C/Users/muhammad.thahir/Desktop/testtable.html",
 		"/D/boots/datasourceBuilder/lib/js/columnFunction.js",
 		"/D/boots/datasourceBuilder/lib/js/columnFunction",
@@ -560,7 +593,6 @@
 		"/C/Users/muhammad.thahir/AppData/Roaming/Sublime Text 3/Packages/TypeScript/TypeScript.sublime-settings",
 		"/C/Users/muhammad.thahir/AppData/Roaming/Sublime Text 3/Packages/TypeScript/Preferences.sublime-settings",
 		"/D/boots/datasourceBuilder/panel/left.html",
-		"/D/boots/datasourceBuilder/lib/js/app.js",
 		"/D/boots/datasourceBuilder/lib/js/watcher.js",
 		"/D/boots/jsPlumb-master/demo/statemachine/demo.js",
 		"/D/boots/datasourceBuilder/lib/js/plumbing.js",
@@ -673,15 +705,11 @@
 		"/C/xampp/htdocs/cuplay/get.php",
 		"/C/xampp/htdocs/cuplay/box.php",
 		"/C/xampp/htdocs/cuplay/jumlah.php",
-		"/C/xampp/htdocs/cuplay/post.php",
-		"/C/xampp/htdocs/cuplay/db.html",
-		"/C/Users/muhammad.thahir/Desktop/test.html",
-		"/D/Game/Steam/steamapps/common/dota 2 beta/dota/itembuilds/default_riki.txt",
-		"/C/Users/muhammad.thahir/Desktop/yuhuu.csv"
+		"/C/xampp/htdocs/cuplay/post.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -696,6 +724,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"initData",
+			"colFunction",
+			"selector.html()",
+			"sqlFunction",
+			"selector.html(",
 			"			",
 			"contextme",
 			"component",
@@ -818,12 +851,7 @@
 			"dragg",
 			"jsplumb",
 			"drag",
-			"jsplumb.rea",
-			"instance",
-			"dragg",
-			"jsplum",
-			"jsplu",
-			"jquery"
+			"jsplumb.rea"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -847,7 +875,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -875,7 +903,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -884,15 +912,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 132,
+						"buffer_size": 177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								72,
-								72
+								29,
+								29
 							]
 						],
 						"settings":
@@ -903,7 +931,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -912,15 +940,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14779,
+						"buffer_size": 14844,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1323,
-								1332
+								4323,
+								4323
 							]
 						],
 						"settings":
@@ -930,10 +958,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 675.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -963,7 +991,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -972,15 +1000,31 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7155,
+						"buffer_size": 7255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1308,
-								1308
+								1453,
+								1453
+							],
+							[
+								1961,
+								1961
+							],
+							[
+								2470,
+								2470
+							],
+							[
+								2976,
+								2976
+							],
+							[
+								3480,
+								3480
 							]
 						],
 						"settings":
@@ -990,7 +1034,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 201.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -998,19 +1042,76 @@
 				},
 				{
 					"buffer": 5,
-					"file": "lib/js/dragAndDropDBStructure.js",
+					"file": "lib/js/contextCallbackFunction.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9058,
+						"buffer_size": 2712,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3893,
-								3893
+								1041,
+								1041
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/js/bootDialog.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"auto_name": "this is a library that handle bootbox dialog",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lib/js/dragAndDropDBStructure.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2771,
+								2771
 							]
 						],
 						"settings":
@@ -1019,43 +1120,15 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 922.0,
+						"translation.x": 35.0,
+						"translation.y": 1420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "lib/js/contextCallbackFunction.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								159,
-								159
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "panel/top.html",
 					"semi_transient": false,
 					"settings":
@@ -1080,7 +1153,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
